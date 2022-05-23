@@ -124,3 +124,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Level02
   fadeSystem: {fileID: 0}
+  doorOpenSound: {fileID: 8300000, guid: ba5f72404d20b2240a6d3ea0e06a7aea, type: 3}
