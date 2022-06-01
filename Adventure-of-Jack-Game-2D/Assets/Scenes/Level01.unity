@@ -2763,6 +2763,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4274518872205512788, guid: cf968f39dad2aa44598bcab2e67df94a, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4274518872205512788, guid: cf968f39dad2aa44598bcab2e67df94a, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
       value: "BU TUHAF YAZI NEDIR?\nPEKI YA BU G\xDCL ? ? ?"
       objectReference: {fileID: 0}
@@ -2999,7 +3003,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &959494665
 RectTransform:
   m_ObjectHideFlags: 0
@@ -353292,11 +353296,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2864324028193294571, guid: 7f554a746c761f04c84655f0b7a43efc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 58.57
+      value: 58.61
       objectReference: {fileID: 0}
     - target: {fileID: 2864324028193294571, guid: 7f554a746c761f04c84655f0b7a43efc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.03
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: 2864324028193294571, guid: 7f554a746c761f04c84655f0b7a43efc, type: 3}
       propertyPath: m_LocalPosition.z

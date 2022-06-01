@@ -32,16 +32,15 @@ public class Poison : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && isInRange)
         {
-            interactUI.enabled = false;
-            interactEminMisin.enabled = true;
-
-            CheckIt();
+           // interactUI.enabled = false;
+            //interactEminMisin.enabled = true;
+            DrinkPoison();
         }
     }
 
-    void CheckIt()
+    void FixedUpate()
     {
-        if (Input.GetKeyDown(KeyCode.Y) && isInRange)
+        if (Input.GetKeyDown(KeyCode.E) && isInRange)
         {
             DrinkPoison();
         }
@@ -54,7 +53,8 @@ public class Poison : MonoBehaviour
         //AudioManager.instance.PlayClipAt(dieSound, transform.position);
         //GetComponent<BoxCollider2D>().enabled = false;
         //interactUI.enabled = false;
-        PlayerHealth.instance.Die();
+        //PlayerHealth.instance.Die();
+        DontDestroyOnLoadScene.instance.RemoveFromDontDestroyOnLoad();
         SceneManager.LoadScene("Outro");
     }
 
@@ -63,7 +63,7 @@ public class Poison : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            interactUI.enabled = true;
+            interactEminMisin.enabled = true;
             isInRange = true;
         }
     }
@@ -72,9 +72,8 @@ public class Poison : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            interactUI.enabled = false;
-            isInRange = false;
             interactEminMisin.enabled = false;
+            isInRange = false;
         }
     }
 
