@@ -6,7 +6,7 @@ public class MazeRenderer : MonoBehaviour
 {
     [SerializeField] MazeGenerator mazeGenerator;
     [SerializeField] GameObject MazeCellPrefab;
-    [SerializeField] GameObject SpherePrefab;
+    //[SerializeField] GameObject SpherePrefab;
 
     //dogru deger vermezsek huceler ust uste biner veya aralarinda gap olurusr.
     public float CellSize = 1f;
@@ -15,7 +15,7 @@ public class MazeRenderer : MonoBehaviour
     {
         MazeCell[,] maze = mazeGenerator.GetMaze();
 
-        GameObject newSphere = Instantiate(SpherePrefab, transform.position, Quaternion.identity);
+        //GameObject newSphere = Instantiate(SpherePrefab, new Vector3(0,1,0), Quaternion.identity);
 
         for(int x = 0; x < mazeGenerator.mazeWidth; x++){
             for(int y = 0; y < mazeGenerator.mazeHeight; y++)
