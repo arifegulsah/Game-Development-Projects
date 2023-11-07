@@ -127,7 +127,7 @@ public class MazeGenerator : MonoBehaviour
         //currentcelli baslama noktamiz olarak ayarlayalim
         currentCell = new Vector2Int(x, y);
 
-        //backtacking yaparken kullanacagimiz liste. gectigimiz yollari icerisinde tutacak.
+        //backtracking yaparken kullanacagimiz liste. gectigimiz yollari icerisinde tutacak.
         List<Vector2Int> path = new List<Vector2Int>();
 
         //dead end bulana kadar dongu devam etsin
