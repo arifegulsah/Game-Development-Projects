@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             other.gameObject.SetActive(false);
+            AudioManager.Instance.PlaySFX("Smash");
         }
     }
 }
