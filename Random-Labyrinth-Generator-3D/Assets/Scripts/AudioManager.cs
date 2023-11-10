@@ -42,7 +42,7 @@ public class AudioManager : MonoBehaviour
             musicSource.clip = s.clip;
             musicSource.Play();
         }
-    }
+    } //source.Play();
 
     public void PlaySFX(string name)
     {
@@ -56,5 +56,26 @@ public class AudioManager : MonoBehaviour
         {
             sfxSource.PlayOneShot(s.clip);
         }
+    } //source.PlayOneShot();
+
+    //CANVAS ÝÇÝN 
+    public void ToggleMusic() //açýksa kapalý kapalýysa açýk yap;
+    {
+        musicSource.mute = !musicSource.mute;
+    }
+
+    public void ToggleSFX()
+    {
+        sfxSource.mute = !sfxSource.mute;
+    }
+
+    public void MusicVolume(float volume) //volume deðiþtir.
+    {
+        musicSource.volume = volume;
+    }
+
+    public void SFXVolume(float volume)
+    {
+        sfxSource.volume = volume;
     }
 }
